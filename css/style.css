@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;
+    color: #ffffff;
+    width: 100%;
+}
+
+.nav-box {
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav-box-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-box-item:nth-child(1) {
+    justify-content: flex-start;
+    gap: 1rem;
+
+}
+
+.nav-box-item:nth-child(2) {
+    column-gap: 3rem;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.nav-link-lg {
+    font-family: "Source Code Pro", Arial, monospace;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-size: 1.8vw;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.span-offset {
+    width: 6px;
+    height: 4vh;
+    background-color: #ffffff;
+}
+
+.nav-link-a-lg {
+    font-family: "Nunito", Arial, sans-serif;
+    font-size: 1.8vw;
+    font-size: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a.nav-link {
+    font-family: "Nunito", Arial, sans-serif;
+    font-size: 2.4vh;
+    font-style: italic;
+
+}
+
+a.nav-link:hover {
+    font-weight: 700;
+    padding: 1px;
+    border-bottom: 0.6vh solid #ffffff;
+    transition: 0.2s;
+
+}
+
+.btn-contact-us {
+    text-align: center;
+    font-size: 2.2vh;
+    font-family: "Nunito", Arial, sans-serif;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid #ffffff;
+    border-radius: 1.9rem 1.9rem 1.9rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btn-contact-us:hover {
+    background-color: #ffffff;
+    font-weight: bold;
+    color: #000000;
+    transition: 0.2s;
+}
+
+.icon>img {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+.banner-top {
+    background-image: url('../assets/banners/banner-top.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 87.5vh;
+}
+
+.banner-top-box {
+    flex-direction: column;
+}
+
+.span-banner-top:nth-child(1) {
+    font-size: 19vh;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.span-banner-top:nth-child(2) {
+    font-size: 18vh;
+    line-height: 5.6vh;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
