@@ -11,7 +11,7 @@ function typeWriter() {
     if (i <= txt.length) {
         document.getElementById("text2").innerHTML = txt.slice(0, i + 1);
         i++;
-        document.getElementById("text2").style.color = `rgb(115, ${7*i}, ${17*i})`
+        document.getElementById("text2").style.color = `rgb(0, ${15*i}, ${15*i})`
         
         console.log(`rgb(115, ${7*i}, ${17*i})`)
         setTimeout(typeWriter, speed);
