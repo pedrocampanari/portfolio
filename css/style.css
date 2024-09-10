@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -9,7 +10,6 @@
 body {
     display: flex;
     flex-direction: column;
-    align-items: end;
     margin: 0;
     padding: 0;
 }
@@ -18,6 +18,14 @@ header {
     background-color: #000000;
     color: #ffffff;
     width: 100%;
+}
+
+.nav-stickly {
+    background-color: #000000c6;
+    position: sticky;
+    color: #ffffff;
+    top: 0;
+
 }
 
 .nav-box {
@@ -107,11 +115,13 @@ a.nav-link:hover {
 }
 
 .banner-top {
+    background-color: #ffffff;
     background-image: url('../assets/banners/banner-top.jpg');
     background-position: top center;
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 87.5vh;
+    background-size: cover;
+    min-height: 87.5vh;
+
 }
 
 .banner-top-box {
@@ -126,10 +136,10 @@ a.nav-link:hover {
 }
 
 .span-banner-top:nth-child(2) {
-    margin-top: -4.7vw;
-    margin-bottom: -2.3vw;
+    margin-top: -70px;
+    margin-bottom: -2vh;
 
-    font-size: 9vw;
+    font-size: 10vw;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 800;
     font-style: normal;
@@ -151,7 +161,7 @@ a.nav-link:hover {
     0% {
         color: #00c3ff;
         text-shadow: 0px 0px 2px #ffffff;
-        
+
     }
 
     50% {
@@ -162,7 +172,7 @@ a.nav-link:hover {
     100% {
         color: #00c3ff;
         text-shadow: 0px 0px 2px #ffffff;
-        
+
     }
 
 }
@@ -170,7 +180,7 @@ a.nav-link:hover {
 @keyframes cursor {
     0% {
         opacity: 1;
-        
+
     }
 
     49% {
@@ -187,33 +197,116 @@ a.nav-link:hover {
 }
 
 
-.banner-top-description{
+.banner-top-description {
     text-shadow: 1px 2px 3px #000000;
     text-align: left;
     width: 60vw;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     font-family: 'Nunito', Arial, sans-serif;
     font-style: italic;
 }
 
-/* Personaliza o fundo do scrollbar */
+
 ::-webkit-scrollbar {
-    width: 8px; /* Largura do scrollbar */
-    background-color: #111111; /* Cor de fundo do scrollbar */
+    width: 8px;
+    background-color: #111111;
 }
 
-/* Personaliza a cor da barra de rolagem */
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(0, 255, 255); /* Cor da barra de rolagem */
-    border-radius: 10px; /* Arredonda os cantos */
+    background-color: rgb(0, 255, 255);
+    border-radius: 10px;
 }
 
-/* Cor da barra de rolagem quando o mouse estiver sobre ela */
 ::-webkit-scrollbar-thumb:hover {
-    background-color: rgb(0, 105, 112); /* Cor ao passar o mouse */
+    background-color: rgb(0, 105, 112);
 }
 
 main {
-    background-color: #000000;
+    background-color: #ffffff;
     width: 100%;
+}
+
+.title-style {
+    font-family: "Kanit", sans-serif;
+    font-size: 3.5rem;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    font-style: normal;
+}
+
+.box-section {
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+
+.section1-container-item {
+    background-image: linear-gradient(to bottom, #7edfcf, #b8fff8);
+    width: 23rem;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px 30px 30px;
+
+}
+
+.section1-container-item>img {
+    border-radius: 30px 30px 30px;
+}
+
+
+
+
+
+footer {
+    padding: 5rem 0 1rem 0;
+    background-color: #000000;
+    height: auto;
+}
+
+
+.footer-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.footer-menu>img {
+    mix-blend-mode: overlay;
+}
+
+.footer-menu>a {
+    text-align: start;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    padding: 3px 0 3px 10px;
+    font-style: italic;
+}
+
+.footer-menu>a:hover {
+    border-left: 3px solid #ffffff;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.footer-menu-social {
+    display: flex;
+    align-items: center;
+    column-gap: 2px;
+}
+
+.nav-link-lg-2 {
+    font-family: "Source Code Pro", Arial, monospace;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-size: 1vw;
+    color: #ffffff;
+    text-decoration: none;
 }
