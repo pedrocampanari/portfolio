@@ -1,0 +1,39 @@
+.banner-top-secondary{
+    background-color: rgb(10, 0, 31);
+}
+
+.span-banner-top-secondary {
+    font-size: 8vw;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.box-projects{
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box-projects > a {
+    text-decoration: none;
+    font-family: "Nunito", Arial, sans-serif;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.box-projects > a > div > img {
+    border-bottom: 0.1px solid #000000;
+}
+
+.bg-section-2{
+    background-image: url('../assets/background/section-projects.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 120vh;
+}
+
+#carouselExampleCaptions {
+    background-color: #0000005d;
+}
