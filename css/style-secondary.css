@@ -24,7 +24,7 @@
 }
 
 .box-projects > a > div > img {
-    border-bottom: 0.1px solid #000000;
+    border-bottom: 0.1px solid #b8b8b8; 
 }
 
 .bg-section-2{
@@ -35,5 +35,11 @@
 }
 
 #carouselExampleCaptions {
-    background-color: #0000005d;
+    background: linear-gradient(0.25turn, #0097d32f, #f700c223);
+    height: 75vh;
+}
+
+.carousel-item > img {
+    height: 75vh;
+
 }
