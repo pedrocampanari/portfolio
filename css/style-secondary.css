@@ -31,15 +31,19 @@
     background-image: url('../assets/background/section-projects.png');
     background-repeat: no-repeat;
     background-position: top;
-    height: 120vh;
+    height: 100vh;
+    max-height: 800px;
 }
 
 #carouselExampleCaptions {
-    background: linear-gradient(0.25turn, #0097d32f, #f700c223);
+    background: linear-gradient(0.25turn, #0097d32f, #00eff723);
     height: 75vh;
+    max-height: 480px;
 }
 
 .carousel-item > img {
-    height: 75vh;
+    height: auto;
 
 }
+
+
